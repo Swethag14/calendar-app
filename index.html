@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Calendar Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calendar-container">
+    <header>
+      <h1 id="month-year"></h1>
+      <div class="nav-buttons">
+        <button id="prev">&#8592;</button>
+        <button id="today">Today</button>
+        <button id="next">&#8594;</button>
+      </div>
+    </header>
+    <div class="calendar-grid">
+      <div class="day-name">Sun</div>
+      <div class="day-name">Mon</div>
+      <div class="day-name">Tue</div>
+      <div class="day-name">Wed</div>
+      <div class="day-name">Thu</div>
+      <div class="day-name">Fri</div>
+      <div class="day-name">Sat</div>
+    </div>
+    <div class="days" id="days"></div>
+  </div>
+
+  <div class="event-panel">
+    <h2>Add Event</h2>
+    <form id="event-form">
+      <label>Date: <input type="date" id="event-date" required></label>
+      <label>Event Title: <input type="text" id="event-title" required></label>
+      <button type="submit">Add Event</button>
+    </form>
+    <div id="event-list"></div>
+  </div>
+
+  <script src="Calendar.js"></script>
+</body>
+</html>
